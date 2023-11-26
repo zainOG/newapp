@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    
+  }
+.content{
+    display: flex;
+    flex-direction: row;
+    max-width: auto;
+    height: 100%;
+    margin-top: 5%;
+}
+
+.content .right,
+.content .left{
+    height: 70vh;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.content .right img{
+    width: 70%;
+    height: 90%;
+    margin: 0 10%;
+    
+}
+.left form{
+    width: 90%;
+    height: 100%;
+    border-radius: 30px;
+    margin: 0 15%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3), -5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.left form .heading{
+    margin-top: 4%;
+    margin-bottom: 3%;
+    align-self: center;
+    font-weight: 800;
+    font-size: 30px;
+    color: rgb(0, 173, 216);
+}
+.left form label{
+    font-size: 14px;
+}
+.left form input{
+    align-self: center;
+    border: none;
+    width: 80%;
+    height: 12vh;
+    background-color: rgb(224, 224, 224);
+    border-radius: 20px;
+    padding-left: 3%;
+}
+.left form button{
+    min-width: 20%;
+    align-self: center;
+    border: 2px solid rgb(0, 173, 216);
+    background-color: rgb(0, 173, 216);
+    margin: 8% 0;
+    color: white;
+    border-radius: 30px;
+    height: 10vh;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+    font-weight: bold;
+}
+.left form button:hover{
+    width: 20%;
+    align-self: center;
+    background-color: white;
+    color: rgb(0, 173, 216);
+   
+}
+.text{
+    font-weight: 300;
+}
+.text span{
+    color: rgb(0, 173, 216);
+}
+.left form .forgotPassword{
+    align-self: self-end;
+    margin-right: 7%;
+    margin-top: 2%;
+}
+.left form p{
+    font-size: 14px;
+    margin-top: 0%;
+    margin-bottom: 2%;
+} 
+.left form a{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 2%;
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+}
+.left form .input{
+    align-self: self-start;
+    margin-top: 4%;
+    margin-left: 10%;
+}
+.left .g-recaptcha{
+    margin-left: 15%;
+    margin-top: 2%;
+}
+@media only screen and (max-width: 520px){
+    .content .right{
+        display: none;
+    }
+    .content .left{
+        width: 100%;
+    }
+    
+}

@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background-image: url('../public/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-color: magenta; */
+  }
+  
+  h1 {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* You can specify different weights if needed */
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Bold */
+  }
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+    filter: opacity(50%);
+
+}

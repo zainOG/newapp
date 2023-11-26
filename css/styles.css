@@ -1,0 +1,662 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(6, 33, 37);
+    color: #333;
+}
+::-webkit-scrollbar {
+    width: 12px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(6, 33, 37); /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Radius of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(5, 27, 31); /* Color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(4, 23, 26); /* Color of the scrollbar thumb on hover */
+}
+
+
+section {
+    padding: 2em;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+}
+
+/* 
+ 
+
+    HEADER SECTION
+
+
+*/
+.header {
+    background-color: rgb(6, 33, 37);
+    color: rgb(0, 217, 255);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  .logo h1 a{
+    color: rgb(0, 217, 255);
+    text-decoration: none;
+  }
+  
+  .links {
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    margin: 0 10% 0 0;
+  }
+  
+  .signup, .contactus {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .signup:hover, .contactus:hover {
+    text-decoration: none;
+    color: rgb(0, 180, 224);
+    
+  }
+  /* 
+  
+  
+  
+  
+    HEADER END
+  
+  
+  
+  */
+
+
+  .intro{
+    padding: 2em;
+    text-align: left;
+    background-image: url('https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px 0px 0px 0px;
+    color: white;
+    height: 30vh;
+  }
+  /* TYPING ANIMATION */
+
+#line1, #line2 {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.intro .links{
+    background-color: transparent;
+    
+    border-radius: 16px;
+    width: max-content;
+    margin-top: 30px;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+   
+}
+.intro .links a {
+    margin-top: 0px;
+    border-radius: 15px;
+    border: 2px solid rgb(0, 180, 224);
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, font-weight 0.3s; /* Added transition properties */
+}
+
+.intro .links a:hover {
+    background-color: rgb(4, 174, 216);
+    color: white;
+    font-weight: 600;
+}
+#line1 {
+    animation: typing 6s ease-in-out infinite;
+}
+
+#line2 {
+    animation: typing 6s ease-in-out infinite;
+}
+
+@keyframes typing {
+    0%, 100% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+  /* TYPING ANIMATION */
+.signup-form, .login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.features-section {
+    background-color: rgb(6, 33, 37);
+    color: #fff;
+    padding: 2em;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature {
+    list-style: none;
+    padding: 0;
+}
+
+.feature li {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(0, 204, 255);
+    box-shadow: 0 4px 8px rgba(211, 211, 211, 0.4);
+    transition: transform 0.3s ease-in-out;
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.feature li:hover {
+    transform: scale(1.05);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.feature h3 {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.feature p {
+    font-size: 14px;
+    color: #e4e4e4;
+}
+
+.features-section .img img {
+   
+   
+    animation: pulse 4s infinite alternate; /* Apply the animation */
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1); /* Starting scale */
+    }
+    to {
+        transform: scale(1.05); /* Ending scale (adjust as needed) */
+    }
+}
+
+/* Form Styling */
+form {
+display: flex;
+flex-direction: column;
+}
+
+label {
+margin-bottom: 0.5em;
+}
+
+input {
+padding: 0.5em;
+margin-bottom: 1em;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+button {
+padding: 0.7em;
+background-color: rgb(0, 180, 224);
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #00568d;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    background-color: rgb(5, 27, 31);
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Additional Styles for Dashboard Page */
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+button {
+    padding: 0.7em;
+    background-color: rgb(0, 180, 224);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00568d;
+}
+
+a {
+    color: rgb(0, 180, 224);
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Additional Styles for Meeting Room Page */
+.meeting-room {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.video-feeds, .chatbox, .controls, .meeting-details {
+    flex: 1;
+    padding: 1em;
+    margin: 1em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.video-feeds {
+    min-width: 400px;
+}
+
+.chatbox {
+    min-width: 300px;
+}
+
+.controls, .meeting-details {
+    min-width: 200px;
+}
+
+/* Style for chat messages (modify as per your chat implementation) */
+#chat-messages {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 0.5em;
+}
+
+/* Style for control buttons */
+.controls button {
+    margin-top: 10px;
+    padding: 0.5em;
+    background-color: rgb(0, 180, 224);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: #00568d;
+}
+
+/* Additional Styles for Meeting Scheduler Page */
+.meeting-scheduler {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5em;
+}
+
+input, select {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.7em;
+    background-color: rgb(0, 204, 255);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00568d;
+}
+
+/* Additional Styles for User Profile Page */
+.user-profile {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.view-details, .edit-details, .change-password, .meeting-history {
+    flex: 1;
+    padding: 1em;
+    margin: 1em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5em;
+}
+
+input {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.7em;
+    background-color: rgb(0, 180, 224);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00568d;
+}
+
+/* Additional Styles for Settings Page */
+.settings {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.audio-settings, .video-settings, .notification-preferences, .security-privacy-settings {
+    flex: 1;
+    padding: 1em;
+    margin: 1em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+label {
+    margin-bottom: 0.5em;
+}
+
+select, input {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for select boxes */
+select {
+    width: 100%;
+}
+
+
+/* 
+
+
+    LOGIN PAGE
+
+
+*/
+
+
+.content{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    max-width: auto;
+    height: 100%;
+    margin-top: 5%;
+}
+
+.content .right,
+.content .left{
+    height: 70vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.content .right img{
+    width: 70%;
+    height: 90%;
+    margin: 0 10%;
+    
+}
+.left form{
+    background-color: rgb(8, 44, 49);
+    width: 60%;
+    height: 100%;
+    border-radius: 30px;
+    margin: 0 15%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px rgba(88, 88, 88, 0.3), -5px 5px 5px rgba(80, 80, 80, 0.3);
+}
+.left form .heading{
+    margin-top: 4%;
+    margin-bottom: 3%;
+    align-self: center;
+    font-weight: 800;
+    font-size: 30px;
+    color: rgb(0, 204, 255);
+}
+.left form label{
+    font-size: 14px;
+}
+.left form input{
+    align-self: center;
+    border: none;
+    width: 80%;
+    height: 40px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 20px;
+    padding-left: 3%;
+}
+.left form input::placeholder{
+    color: black;
+}
+.left form button{
+    min-width: 20%;
+    align-self: center;
+    border: 2px solid rgb(0, 204, 255);
+    background-color: rgb(0, 204, 255);
+    margin: 8px 0;
+    color: white;
+    border-radius: 30px;
+    height: 40px;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+    font-weight: bold;
+}
+.left form button:hover{
+    align-self: center;
+    background-color: white;
+    color: rgb(0, 204, 255);
+   
+}
+.text{
+    font-weight: 300;
+}
+.text span{
+    color: rgb(0, 204, 255);
+}
+.left form .forgotPassword{
+    align-self: self-end;
+    margin-right: 7%;
+    margin-top: 4px;
+    transition: color 0.3s, color 0.3s;
+}
+.left form .forgotPassword:hover{
+    color: rgb(0, 204, 255);
+    cursor: pointer;
+}
+.left form p{
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 2%;
+} 
+.left form a{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    text-decoration: none;
+    color: white;
+}
+.left form .input{
+    align-self: self-start;
+    margin-top: 4px;
+    margin-left: 10%;
+}
+.left .g-recaptcha{
+    margin-left: 15%;
+    margin-top: 2%;
+}
+.redirect{
+    color: white;
+    margin-bottom: 20px;
+    transition: color 0.3s, color 0.3s;
+}
+.redirect:hover{
+    color: rgb(0, 204, 255);
+}
+.left p{
+    margin: 0px;
+}
+@media only screen and (max-width: 520px){
+    .content .right{
+        display: none;
+    }
+    .content .left{
+        max-width: auto;
+        margin: 0px;
+    }
+    .left form{
+        margin: 0 10px;
+        margin-top: 30px;
+        width: 95%;
+    }
+    
+}
+
+
+
+/* 
+
+
+    LOGIN PAGE
+
+
+*/
+
+@media only screen and (max-width: 520px){
+    .features-section{
+        text-align: center;
+    }
+    .intro {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .features-section .img{
+        display: none;
+    }
+    .content .left{
+        width: 100%;
+    }
+    .contactus{
+        display: none;
+    }
+}

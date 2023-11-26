@@ -1,0 +1,1 @@
+candidate:333536854 1 tcp 1518280447 192.168.100.72 9 typ host tcptype active generation 0 ufrag s9Y6 network-id 1 network-cost 1011s9Y6
